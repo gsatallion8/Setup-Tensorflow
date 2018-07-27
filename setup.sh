@@ -1,3 +1,10 @@
+install-conda:
+	wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.sh
+	sudo bash ./Anaconda3-4.4.0-Linux-x86_64.sh
+	export PATH=~/anaconda3/bin:$PATH
+install-python3.5.2:
+	conda create --name tensorflow python=3.5.2
+
 sudo apt-get update
 sudo apt-get install git
 sudo apt-get install htop
