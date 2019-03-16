@@ -1,7 +1,7 @@
 install-conda:
 	wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.sh
 	sudo bash ./Anaconda3-4.4.0-Linux-x86_64.sh
-	export PATH=~/anaconda3/bin:$PATH
+	echo 'export PATH=~/anaconda3/bin:$PATH' >> ~/.bashrc
 install-python3.5.2:
 	conda create --name tensorflow python=3.5.2
 
